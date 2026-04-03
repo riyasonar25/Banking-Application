@@ -1,0 +1,235 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+/* Header */
+.top-header {
+    background: #1f3a52;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-buttons button {
+    background: #3498db;
+    margin-left: 10px;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Main container */
+.container {
+    width: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+
+/* Buttons */
+button {
+    padding: 8px 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #3498db;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2980b9;
+}
+
+/* Logout */
+.logout-btn {
+    background: #e74c3c;
+    margin-top: 15px;
+}
+
+.logout-btn:hover {
+    background: #c0392b;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Sections (Forms) */
+.section {
+    display: none;
+    width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Button group */
+.button-container {
+    margin-top: 15px;
+}
+
+/* Messages */
+.success {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.error {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+/* View Account Card */
+#view-result {
+    background: #f4f6f8;
+    padding: 7px;
+    padding-top:0px;
+    padding-bottom:0px;
+    border-radius: 10px;
+    margin-top: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.account-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.account-row:last-child {
+    border-bottom: none;
+}
+
+.account-row span {
+    font-weight: 600;
+    color: #333;
+}
+
+.account-row div {
+    color: #000;
+}
+
+
+/* Accounts Table */
+.accounts-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background: #f4f6f8;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 15px;
+
+}
+
+.accounts-table th, 
+.accounts-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.accounts-table th {
+    background: #1f3a52;
+    color: white;
+}
+
+.accounts-table tr:nth-child(even) {
+    background: #e9ecef;
+}
+
+.accounts-table tr:hover {
+    background: #dce1e5;
+}
+
+ 
+#list.section {
+    width: 700px;
+}
+
+.nav-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 80px;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #555;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height:1.6;
+}
+
+.hero-features {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-weight: 600;
+}
+
+.hero-title {
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.hero-title  {
+    color: #3498db;   
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+}
