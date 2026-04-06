@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8080";
+const BASE_URL = "http://localhost:8082";
 let isLoggedIn = false;
 
 /* ---------------- AUTH UI CONTROL ---------------- */
@@ -97,20 +97,20 @@ function createAccount() {
         });
 }
 
-function deposite() {
+function deposit() {
     const data = {
         accNo: document.getElementById("d-acc").value,
         amount: document.getElementById("d-amount").value
     };
 
-    fetch(BASE_URL + "/transactions/deposite", {
+    fetch(BASE_URL + "/transactions/deposit", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data)
     })
         .then(res => res.text())
         .then(msg => {
-            const msgEl = document.getElementById("deposite-result");
+            const msgEl = document.getElementById("deposit-result");
             msgEl.className = "success";
             msgEl.innerText = msg;
             clearInputs(["d-acc", "d-amount"]);
